@@ -1,0 +1,110 @@
+/* Global Style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2e003e, #3d155f, #050c72);
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+header {
+  background: #2e003e;
+  padding: 18px 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  color: #ffcf40; /* gold accent */
+  letter-spacing: 3px;
+}
+
+/* Chapters Grid */
+.chapters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+  padding: 35px;
+}
+.chapter-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
+}
+.chapter-card:hover {
+  background: rgba(255, 207, 64, 0.15); /* gold glow */
+  transform: translateY(-10px);
+  border: 2px solid #ff77e9; /* pink border on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.chapter-card a {
+  text-decoration: none;
+  color: #ff77e9; /* pink accent */
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Chapter Page */
+.container {
+  padding: 35px;
+}
+h2 {
+  color: #ffcf40;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.section {
+  margin-bottom: 30px;
+}
+button, .btn-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff77e9, #ffcf40); /* pink to gold */
+  color: #2e003e;
+  font-weight: bold;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+button:hover, .btn-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* Table Design */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+th, td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background: rgba(106, 5, 114, 0.6);
+  color: #ffcf40;
+  font-size: 16px;
+}
+td a {
+  color: #ff77e9;
+  text-decoration: none;
+  font-weight: bold;
+}
+td a:hover {
+  color: #ffcf40;
+}
